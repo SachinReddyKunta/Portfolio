@@ -74,6 +74,7 @@ a {
 .location {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 10px;
 }
 .location i {
@@ -243,7 +244,7 @@ html {
     border: 1px solid lightslategray;
     border-radius: 5px;
 }
-.project1 div {
+.project1>div {
     margin: 28px;
 }
 
@@ -283,21 +284,57 @@ section {
     justify-content: center;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
+    .name-div {
+        margin: 20px auto;
+        font-size: 37px;
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
+    .my-img {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+     
+    
+    }
+    .nav-container {
+        display: flex;
+        margin: 10px 0;
+        justify-content: space-between;
+        width: 70%;
+        height: 9vh;
+        color: whitesmoke;
+        border-radius: 3px;
+    }
+    .nav-container li {
+        list-style: none;
+        margin: 30px 10px;
+    }
+    .logo {
+        margin: 10px 14px;
+        padding: 12px 50px;
+    }
     .projects {
         display: grid;
-        grid-template-columns: 300px;
-        min-width: 400px;
+        grid-template-columns: 240px;
         grid-auto-rows: auto auto auto;
         justify-content: center;
+        align-items: center;
+        margin: 10px auto;
+    }
+
+    .project1 {
+        margin: 10px -25px;
     }
 
     .data {
         display: grid;
-        grid-template-columns: 140px 140px;
-        grid-auto-rows: 9rem 9rem;
+        min-width: 200px;
+        grid-template-columns: 130px 130px;
+        grid-auto-rows: 8rem 8rem;
         justify-content: center;
-        grid-gap: 80px;
+        grid-gap: 50px;
         margin: 50px;
     }
 
@@ -308,14 +345,30 @@ section {
     
     .rounded-circle p{
         margin-top: 10px;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .skills-icons{
-        display: grid;
-        grid-template-columns: 460px 460px;
-        grid-auto-rows: 240px 240px 240px;
-        justify-content: center;
+       display: flex;
+       flex-wrap: wrap;
+    }
+    .pro-icons {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .summary {
+        width: 80%;
+        margin:10px auto
+    }
+    .summary p {
+        text-align: center;
+        line-height: 25px;
+        font-size: 17px;
+    }
+    .project1 {
+        min-width: 300px;
+        border: 1px solid lightslategray;
+        border-radius: 5px;
     }
 } 
 
@@ -350,7 +403,7 @@ section {
     .projects {
         display: grid;
         min-width: 1400px;
-        grid-template-columns: 31% 31% 31%;
+        grid-template-columns: 39% 39%;
         grid-auto-rows: auto;
         justify-content: center;
     }
